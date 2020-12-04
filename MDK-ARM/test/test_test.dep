@@ -1,7 +1,7 @@
 Dependencies for Project 'test', Target 'test': (DO NOT MODIFY !)
 CompilerVersion: 5060750::V5.06 update 6 (build 750)::.\ARMCC
 F (startup_stm32g070xx.s)(0x5FC46308)(--cpu Cortex-M0+ -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_test-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil_v5\ARM\PACK\Keil\STM32G0xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include--pd "__UVISION_VERSION SETA 530" --pd "_RTE_ SETA 1" --pd "STM32G070xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32g070xx.lst --xref -o test\startup_stm32g070xx.o --depend test\startup_stm32g070xx.d)
-F (../Core/Src/main.c)(0x5FC9FCB6)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Src -I ..\FreeRTOS\include -I ..\FreeRTOS\port\RVDS\ARM_CM0 -I ..\Led -I ..\TM1668-I.\RTE\_test-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil_v5\ARM\PACK\Keil\STM32G0xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32G070xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G070xx-o test\main.o --omf_browse test\main.crf --depend test\main.d)
+F (../Core/Src/main.c)(0x5FCA077D)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Src -I ..\FreeRTOS\include -I ..\FreeRTOS\port\RVDS\ARM_CM0 -I ..\Led -I ..\TM1668-I.\RTE\_test-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil_v5\ARM\PACK\Keil\STM32G0xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32G070xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G070xx-o test\main.o --omf_browse test\main.crf --depend test\main.d)
 I (../Core/Inc/main.h)(0x5FC88A52)
 I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h)(0x5FA2B454)
 I (../Core/Inc/stm32g0xx_hal_conf.h)(0x5FC9A291)
@@ -44,7 +44,7 @@ I (..\FreeRTOS\include\mpu_wrappers.h)(0x573F3A16)
 I (..\FreeRTOS\include\task.h)(0x573F3A16)
 I (..\FreeRTOS\include\list.h)(0x573F3A16)
 I (..\Led\bsp_led.h)(0x5FC99E20)
-I (..\TM1668\sm1616_drv.h)(0x5FC9FC8D)
+I (..\TM1668\sm1616_drv.h)(0x5FCA075D)
 F (../Core/Src/stm32g0xx_it.c)(0x5FC4A911)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Src -I ..\FreeRTOS\include -I ..\FreeRTOS\port\RVDS\ARM_CM0 -I ..\Led -I ..\TM1668-I.\RTE\_test-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil_v5\ARM\PACK\Keil\STM32G0xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32G070xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G070xx-o test\stm32g0xx_it.o --omf_browse test\stm32g0xx_it.crf --depend test\stm32g0xx_it.d)
 I (../Core/Inc/main.h)(0x5FC88A52)
 I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h)(0x5FA2B454)
@@ -2035,8 +2035,8 @@ I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h)(0x5FA2B454)
 I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h)(0x5FA2B454)
 I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h)(0x5FA2B454)
 F (..\Led\bsp_led.h)(0x5FC99E20)()
-F (..\TM1668\sm1616_drv.c)(0x5FC9FC88)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Src -I ..\FreeRTOS\include -I ..\FreeRTOS\port\RVDS\ARM_CM0 -I ..\Led -I ..\TM1668-I.\RTE\_test-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil_v5\ARM\PACK\Keil\STM32G0xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32G070xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G070xx-o test\sm1616_drv.o --omf_browse test\sm1616_drv.crf --depend test\sm1616_drv.d)
-I (..\TM1668\sm1616_drv.h)(0x5FC9FC8D)
+F (..\TM1668\sm1616_drv.c)(0x5FCA06E0)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc -I ../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I ../Drivers/CMSIS/Include -I ..\Core\Src -I ..\FreeRTOS\include -I ..\FreeRTOS\port\RVDS\ARM_CM0 -I ..\Led -I ..\TM1668-I.\RTE\_test-ID:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include-ID:\Keil_v5\ARM\PACK\Keil\STM32G0xx_DFP\1.2.0\Drivers\CMSIS\Device\ST\STM32G0xx\Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32G070xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G070xx-o test\sm1616_drv.o --omf_browse test\sm1616_drv.crf --depend test\sm1616_drv.d)
+I (..\TM1668\sm1616_drv.h)(0x5FCA075D)
 I (../Core/Inc/main.h)(0x5FC88A52)
 I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h)(0x5FA2B454)
 I (../Core/Inc/stm32g0xx_hal_conf.h)(0x5FC9A291)
@@ -2069,7 +2069,6 @@ I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h)(0x5FA2B454)
 I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h)(0x5FA2B454)
 I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h)(0x5FA2B454)
 I (../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h)(0x5FA2B454)
-I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E53505C)
 I (..\FreeRTOS\include\FreeRTOS.h)(0x573F3A16)
 I (..\Core\Src\FreeRTOSConfig.h)(0x5FC9FAAF)
 I (..\FreeRTOS\include\projdefs.h)(0x573F3A16)

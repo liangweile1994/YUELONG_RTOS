@@ -98,8 +98,8 @@ static void BSP_Init(void)
 	HAL_Init();
   SystemClock_Config();
 	LED_GPIO_Config();
-	__HAL_RCC_GPIOC_CLK_ENABLE();
 	SM1616_I2c_Init();
+	__HAL_RCC_GPIOC_CLK_ENABLE();
 }
 
 

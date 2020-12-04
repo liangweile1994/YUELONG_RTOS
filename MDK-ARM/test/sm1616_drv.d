@@ -33,7 +33,6 @@ test\sm1616_drv.o: ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h
 test\sm1616_drv.o: ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h
 test\sm1616_drv.o: ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h
 test\sm1616_drv.o: ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart_ex.h
-test\sm1616_drv.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 test\sm1616_drv.o: ..\FreeRTOS\include\FreeRTOS.h
 test\sm1616_drv.o: ..\Core\Src\FreeRTOSConfig.h
 test\sm1616_drv.o: ..\FreeRTOS\include\projdefs.h
