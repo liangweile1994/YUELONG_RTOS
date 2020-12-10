@@ -61,6 +61,9 @@
 "test\port.o"
 "test\bsp_led.o"
 "test\sm1616_drv.o"
+"test\sm1616_dev.o"
+"test\apt8l16.o"
+"test\debug_uart.o"
 --library_type=microlib --strict --scatter "test\test.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

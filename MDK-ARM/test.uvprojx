@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32G070xx</Define>
               <Undefine></Undefine>
-              <IncludePath></IncludePath>
+              <IncludePath>..\Drivers\STM32G0xx_HAL_Driver\Inc;..\FreeRTOS\include;..\FreeRTOS\port\RVDS\ARM_CM0;..\Core\Inc;..\TM1668;..\Led;..\Core\Src;..\I2C;..\APT8L16;..\debug_uart</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -731,12 +731,37 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>BSP_I2C</GroupName>
+          <GroupName>SM1616</GroupName>
           <Files>
             <File>
               <FileName>sm1616_drv.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\TM1668\sm1616_drv.c</FilePath>
+            </File>
+            <File>
+              <FileName>sm1616_dev.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\TM1668\sm1616_dev.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>APT8L16</GroupName>
+          <Files>
+            <File>
+              <FileName>apt8l16.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APT8L16\apt8l16.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>debug_uart</GroupName>
+          <Files>
+            <File>
+              <FileName>debug_uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\debug_uart\debug_uart.c</FilePath>
             </File>
           </Files>
         </Group>

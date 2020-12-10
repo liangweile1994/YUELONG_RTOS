@@ -2,14 +2,11 @@
 /* COMPANY:YUELONGCHUFANG                                                	  */
 /* FILENAME: SM1616_DRC.C                									  */
 /* BRIEF:SM1616_I2C_SIMULATE_DRIVER						                      */
-/* AUTHOR:LE,LONG                															  */
+/* AUTHOR:LONG,LE               															  */
 /******************************************************************************/
 
 
-
 #include "sm1616_drv.h"
-#include "FreeRTOS.h"
-#include "task.h"
 
 
 /* BRIEF:GPIO_Init 										                      */
@@ -33,6 +30,7 @@ static void SDA_Out(void)
 	HAL_GPIO_Init(SM1616_SDA_GPIO_Port, &GPIO_InitStruct);
 }
 
+
 static void SDA_In(void)
 {
 	GPIO_InitTypeDef GPIO_InitStruct = {0};
@@ -42,6 +40,20 @@ static void SDA_In(void)
 	HAL_GPIO_Init(SM1616_SDA_GPIO_Port, &GPIO_InitStruct);
 }
 
+
+/**
+* @brief  i2c_initialization
+* @param  
+* @retval 
+*/
+void SM1616_I2c_Init(void)
+{
+	__HAL_RCC_GPIOC_CLK_ENABLE();
+	SDA_Out();
+	SCL_Out();
+	SM1616_SDA_H();
+	SM1616_SCL_H();
+}
 
 /* BRIEF:generate i2c start signal 										               */
 static void I2c_Start(void)
@@ -127,7 +139,7 @@ static uint8_t I2c_WaitAck(void)
 * @retval 
 */
 
-uint8_t SM1616_I2c_Send_OneByte(uint8_t reg_addr, uint8_t dat)
+void SM1616_I2c_Send_OneByte(uint8_t reg_addr, uint8_t dat)
 {
 	I2c_Start();
 	I2c_SendByte(reg_addr);
@@ -141,7 +153,6 @@ uint8_t SM1616_I2c_Send_OneByte(uint8_t reg_addr, uint8_t dat)
 	I2c_SendByte(0x01);
 	I2c_WaitAck();
 	I2c_Stop();
-	return TRUE;
 }
 
 /**
@@ -149,7 +160,7 @@ uint8_t SM1616_I2c_Send_OneByte(uint8_t reg_addr, uint8_t dat)
 * @param  buf:the pointer to display data   len: data legth
 * @retval 
 */
-uint8_t SM1616_I2c_Send_NBytes(uint8_t *buf, uint8_t len)
+void SM1616_I2c_Send_NBytes(uint8_t *buf,uint8_t len)
 {
 	uint8_t i;
 	I2c_Start();
@@ -167,20 +178,6 @@ uint8_t SM1616_I2c_Send_NBytes(uint8_t *buf, uint8_t len)
 	I2c_SendByte(0x01);
 	I2c_WaitAck();
 	I2c_Stop();
-	return TRUE;
 }
 
-
-/**
-* @brief  i2c_initialization
-* @param  
-* @retval 
-*/
-void SM1616_I2c_Init(void)
-{
-	SDA_Out();
-	SCL_Out();
-	SM1616_SDA_H();
-	SM1616_SCL_H();
-}
 
